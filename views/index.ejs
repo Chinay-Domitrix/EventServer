@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<script>
+  function reveal(){
+    const x = document.getElementById("sus");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+</script>
+<html>
+  <head>
+    <title>/event</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>glhf</h1>
+    <button onclick="reveal()">Hint</button>
+    <div id="sus" style="display: none">
+      <p>hint: look at the page title, also remember this: </p>
+      <a href="/brainfuck">brainfuck</a>
+    </div>
+  </body>
+</html>
