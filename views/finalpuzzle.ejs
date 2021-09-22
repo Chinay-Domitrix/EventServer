@@ -1,23 +1,19 @@
 <!DOCTYPE html>
 <script>
-    function reveal(){
-        const x = document.getElementById("sus");
-        if (x.style.display === "none") {
-            x.style.display = "block";
-        } else {
-            x.style.display = "none";
-        }
-    }
+	function reveal() {
+		const x = document.getElementById("sus");
+		x.style.display = (x.style.display === "none") ? "block" : "none";
+	}
 </script>
 <html>
 <head>
-    <title>final stretch</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+	<title>final stretch</title>
+	<link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
 <body>
 <h1>:O</h1>
 <div style="width: 755px;word-wrap: break-word">
-    <pre>
+	<pre>
   <code>LVstLS0tLS0tPis8XT4rKysuKysrKysrKysuKysrKysuPi1bLS0tLS0+KzxdPisrLi1
 bLS0+KysrPF0+LlstLS0+KysrKzxdPisrLi0tLS4uK1stLS0tPisrKzxdPi4tLS0tLS0tLS0tLi
 srKysrKysrKysrKysuPitbLS0tLS0+KysrPF0+LitbLS0tLT4rKys8XT4uWy0tLT4rKysrP
@@ -26,7 +22,7 @@ F0+KysuKy4tWy0tPis8XT4tLS0uKytbLS0+KysrPF0+Ky4rKy4tLVstPisrKys8XT4rLi4=</code>
 </div>
 <button onclick="reveal()">Hint</button>
 <div id="sus" style="display: none">
-    <p>hint: base and the max size of a stack of stone</p>
+	<p>hint: base and the max size of a stack of stone</p>
 </div>
 </body>
 </html>
