@@ -1,18 +1,8 @@
-var express = require('express');
-var router = express.Router();
-
+import { Router } from 'express';
+var router = Router();
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
-router.get('/event/amogus/sussy',function (req,res){
-  res.render('finalpuzzle')
-});
-router.get('/event',(req,res)=>{
-  res.render('secondpuzzle')
-})
-router.get('/brainfuck',(req,res)=>{
-  res.render('brainfuck');
-})
-
-module.exports = router;
+router.get('/', (_req, res, _next) => res.render('index', { title: 'Express' }));
+router.get('/event/amogus/sussy', (_req,res) => res.render('finalpuzzle'));
+router.get('/event', (_req, res) => res.render('secondpuzzle'));
+router.get('/brainfuck', (_req, res) => res.render('brainfuck'));
+export default router;
